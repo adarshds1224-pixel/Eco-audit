@@ -189,6 +189,8 @@ GET /logs
 ## 📸 Screenshots
 <img width="1860" height="942" alt="image" src="https://github.com/user-attachments/assets/9dc7c8fd-0dab-4536-bf6b-7bb71f6ff9ec" />
 <img width="1180" height="936" alt="image" src="https://github.com/user-attachments/assets/f5b8805a-18a2-49ae-a27f-783db836b133" />
+<img width="1907" height="403" alt="image" src="https://github.com/user-attachments/assets/2e3c865d-cf18-49c3-a3d3-39a3f0fba6c1" />
+
 
 - Dashboard
 - Waste Logging
