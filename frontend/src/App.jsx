@@ -5,7 +5,8 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000";
+
+const API_URL = "https://eco-audit-p85i.onrender.com";
 
 delete L.Icon.Default.prototype._getIconUrl;
 
