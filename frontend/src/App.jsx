@@ -6,7 +6,7 @@ import L from "leaflet";
 import "./App.css";
 
 
-const API_URL = "https://eco-audit-p85i.onrender.com";
+const API_URL = import.meta.env.VITE_API_URL;
 
 delete L.Icon.Default.prototype._getIconUrl;
 
