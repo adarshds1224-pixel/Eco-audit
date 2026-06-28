@@ -13,17 +13,17 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-<<<<<<< HEAD
+
     allow_origins=[
         "https://eco-audit-lbuo7ve13-adarshecoaudit.vercel.app",
         "https://eco-audit-sand.vercel.app",
         "http://localhost:5173",
     ],
     allow_credentials=True,
-=======
+
     allow_origins=["*"],
     allow_credentials=False,
->>>>>>> cfe2d78 (Fix production CORS in backend main)
+
     allow_methods=["*"],
     allow_headers=["*"],
 )
