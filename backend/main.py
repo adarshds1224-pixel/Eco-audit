@@ -13,12 +13,17 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
+<<<<<<< HEAD
     allow_origins=[
         "https://eco-audit-lbuo7ve13-adarshecoaudit.vercel.app",
         "https://eco-audit-sand.vercel.app",
         "http://localhost:5173",
     ],
     allow_credentials=True,
+=======
+    allow_origins=["*"],
+    allow_credentials=False,
+>>>>>>> cfe2d78 (Fix production CORS in backend main)
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -54,7 +59,7 @@ async def create_log(
         with open(file_path, "wb") as buffer:
             shutil.copyfileobj(image.file, buffer)
 
-        image_url = f"http://127.0.0.1:8000/uploads/{filename}"
+        image_url = f"https://eco-audit-p85i.onrender.com/uploads/{filename}"
 
     data = {
         "category": category,
