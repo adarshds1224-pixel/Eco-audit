@@ -76,12 +76,12 @@ def get_logs():
     for log in logs_collection.find().sort("createdAt", -1):
         logs.append({
             "id": str(log["_id"]),
-            "category": log["category"],
-            "weight": log["weight"],
-            "latitude": log["latitude"],
-            "longitude": log["longitude"],
+            "category": log.get("category", ""),
+            "weight": log.get("weight", 0),
+            "latitude": log.get("latitude", 0),
+            "longitude": log.get("longitude", 0),
             "image_url": log.get("image_url"),
-            "createdAt": log["createdAt"],
+            "createdAt": str(log.get("createdAt", "")),
         })
 
     return logs
